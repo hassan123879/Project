@@ -16,20 +16,21 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
 
-    protected void onCreate(Bundle b) {
-        super.onCreate(b);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         auth = FirebaseAuth.getInstance();
     }
 
     public void scanQR(View view) {
-        startActivity(new Intent(this, QRScannerActivity.class));
+        startActivity(new Intent(MainActivity.this, QRScannerActivity.class));
     }
 
     public void logout(View view) {
         auth.signOut();
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
         finish();
     }
 }
