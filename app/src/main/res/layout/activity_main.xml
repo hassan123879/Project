@@ -27,6 +27,12 @@
         android:text="Logout"
         android:onClick="logout"
         android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/openChatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Chat"/>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"

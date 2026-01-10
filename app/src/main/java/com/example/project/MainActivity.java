@@ -53,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
                         mInterstitialAd = null;
                     }
                 });
+        Button openChatBtn = findViewById(R.id.openChatBtn);
+
+        openChatBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+            startActivity(intent);
+        });
 
         // 4. Load Banner Ad (AdView)
         AdView adView = findViewById(R.id.adView);

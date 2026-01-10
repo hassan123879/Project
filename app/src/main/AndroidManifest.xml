@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".ChatAdaptar"
+            android:name=".ChatAdapter"
             android:exported="false" />
         <activity
             android:name=".ChatActivity"
